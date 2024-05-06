@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee and Department Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form id="employeeForm">
+        <h2>Employee Details</h2>
+        <label for="eid">Employee ID:</label>
+        <input type="text" id="eid" name="eid">
+
+        <label for="ename">Employee Name:</label>
+        <input type="text" id="ename" name="ename">
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address">
+
+        <label for="telephone">Telephone:</label>
+        <input type="text" id="telephone" name="telephone">
+
+        <label for="designation">Designation:</label>
+        <input type="text" id="designation" name="designation">
+
+        <h2>Department Details</h2>
+        <label for="did">Department ID:</label>
+        <input type="text" id="did" name="did">
+
+        <label for="dname">Department Name:</label>
+        <input type="text" id="dname" name="dname">
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location">
+
+        <label for="numOfStaff">Number of Staff:</label>
+        <input type="text" id="numOfStaff" name="numOfStaff">
+
+        <button type="button" onclick="displayDetails()">Submit</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script src="employee.js"></script>
+    <script src="department.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
